@@ -24,6 +24,60 @@ body{
 	background-color: #FFFFFF;
 }
 
+#img {
+  width: 500px;
+  display: inline-block;
+  float: left
+}
+
+#tip-title2 {
+   margin-top: 35px;
+   width: 293px;
+   height: 36px;
+   display: inline-block;
+   float: left;
+   background: rgba(25,128,181,0.2);
+}
+
+#tip-title1 {
+  margin-top: 35px;
+  width: 100px;
+  height: 36px;
+  display: inline-block;
+  float: left;
+  background: rgb(25,128,181);
+}
+
+
+#tip-title1 h2, #tip-title2  h2 {
+   padding: 2px 0px 2px 10px;
+}
+
+#tip-title1  h2 {
+   color: #FFFFFF;
+}
+
+#description {
+  width: 393px;
+  height: 261px;
+  display: inline-block;
+  float: left;
+  margin-top: 0px;
+  font-size: 16px;
+  background: rgba(226,245,255,0.2);
+  box-shadow: 2px 2px 10px 0px rgba(25,128,181,.4);
+}
+
+#description p{
+  margin-top: 0px;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top:50px;
+}
+
+
 #headingSection{
 	background-image:url('../img/Logo-Bund.jpg');
 	background-repeat:no-repeat;
@@ -31,8 +85,7 @@ body{
 	position:relative;
 	border-bottom:none;
 	vertical-align:middle;
-	border: 1px solid #dedede;
-	height: 88px;
+	height: 120px;
 }
 
 #selectLang{
@@ -60,7 +113,6 @@ body{
 #Sections{
     padding-bottom: 85px;
     overflow: hidden;
-	border: 1px solid #dedede;
 	background-color:#fff;
 	background-repeat:no-repeat;
 	background-position:right bottom;
@@ -68,24 +120,49 @@ body{
 
 #menuHelp{
 	float:left;
-	width:280px;
-	padding-top:30px; 
-	padding-left:24px;
-	line-height: 16px;
+	width:300px;
+	margin-top: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+#menuHelp .accordion-menu {
+    line-height: 30px;
+	padding-left: 20px;
+	background: #E3EBF5;
+	vertical-align: middle;
+	border-top: 1px solid #A5B4C8;
+	border-bottom: 1px solid #A5B4C8;
+
+}
+
+#menuHelp .accordion-menu  h3 {
+    cursor: pointer;
 }
 
 #menuHelp a, a:visited, a:focus{
-	color:#000;
-	font-size:0.9em !important;
-	font-weight:normal !important;
-	margin-left:10px !important;
-
+    color: #000;
+	font-size:12px !important;
+	font-weight:bold !important;
 	text-decoration: none; 
 	float:left;
 }
 
-#menuHelp a:hover{
-	color:#ff0000;
+#menuHelp a:hover {
+  font-size:12px !important;
+  margin-left: 0px;
+}
+
+.accordion-submenu {
+  display: none;
+  width: 280px;
+  padding-left: 20px;
+  line-height: 30px;
+  background: #A5B4C8;
+}
+
+.owl-controls {
+margin-top: 0px;
+margin-bottom: 10px;
 }
 
 #FAQ{
@@ -119,7 +196,7 @@ body{
 #helpSection{
 	float:right;
 	width:620px;
-	padding-top:40px;
+	padding-top:10px;
 }
 
 p > a:link{ 
@@ -151,19 +228,16 @@ h1{
 
 h2{
 	color:#000;
-	font-size:1.5em;
+	font-size:28px;
 	font-weight:bold;
-	margin-bottom:10px;
 }
 
 h3{
 	color:#000;
 	font-size:0.9em;
 	font-weight:bold;
-	margin-top: 12px;
-	padding-left: 4px;
-	margin-bottom: 2px;
-	border: 1px solid #dedede;
+	margin-top: auto;
+	margin-bottom: auto;
 	width:280px;
 }
 
@@ -227,7 +301,7 @@ legend{
 	position:absolute; 
 	text-decoration: none;
 	left:26px; 
-	top:97px;
+	top:92px;
 	width:120px;
 }
 
@@ -238,7 +312,7 @@ legend{
 	position:absolute; 
 	text-decoration: none;
 	left:26px; 
-	top:97px;
+	top:92px;
 	width:120px;
 }
 
@@ -247,6 +321,7 @@ legend{
 font-size:10px;
 text-align:center;
 padding-bottom:8px;
+border-top: 1px solid #dedede;
 }
 
 #footer a {
@@ -255,6 +330,12 @@ text-decoration:none;
 }
 #footer a:hover {
 color:#ff0000;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 492px;
+    height: auto;
 }
 
 

@@ -153,7 +153,7 @@ $(document).ready(function () {
 		var dx3 = $('<div id="dx3"><a href="https://map.geo.admin.ch" target="_self"><span style="font-size:13px">&#8678;</span> map.geo.admin.ch</div>');
 		
 		
-
+        
             $.each(msg.rows, function () {
 
                 var row = this;
@@ -161,25 +161,49 @@ $(document).ready(function () {
 					titles = row[1].replace(/[\n\r]/g, '<br>'),
 					contents = row[2],
 					languages = row[5];
+					group = row[9];
 					console.log(ids, titles);
-
 				if (lang == languages && contents !== '#' && ids == id && id == 1) {
 				    dx1.append('<a>'+titles+'</a>');
 			    }	else if (lang == languages && contents !== '#' && ids == id && id !== 1) {
 				    dt.append('<span style="color:#ff0000; font-size:0.9em; padding-left:20px; background: url(img/arrow.png) no-repeat 10px 2px;">'+titles+'</span></a><br>');
 				}	else if (lang == languages && contents !== '#' && ids == 1) {
 				    dx2.append('<a href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a><br>');
-			    }	else if (lang == languages && contents !== '#') {
-				    dt.append('<a href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a><br>');
-				}	else if (lang == languages && contents == '#'){
-				    dt.append('<h3>' + titles + '</h3>');
+			    }	else if (lang == languages && contents !== '#' && group == 'submenu1' ) {
+				    dt.append('<a class="accordion-submenu submenu1" href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a>');
+				}	else if (lang == languages && contents == '#' && group == 'menu1'){
+				    dt.append('<a class="accordion-menu menu1" onclick="menu1()"><h3>' + titles + '</h3></a>');
+				}   else if (lang == languages && contents !== '#' && group == 'submenu2' ) {
+				    dt.append('<a class="accordion-submenu submenu2" href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a>');
+				}	else if (lang == languages && contents == '#' && group == 'menu2'){
+				    dt.append('<a class="accordion-menu menu2" class="accordion-menu menu2" onclick="menu2()"><h3>' + titles + '</h3></a>');
+				}   else if (lang == languages && contents !== '#' && group == 'submenu3' ) {
+				    dt.append('<a class="accordion-submenu submenu3" href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a>');
+				}	else if (lang == languages && contents == '#' && group == 'menu3'){
+				    dt.append('<a class="accordion-menu menu3" onclick="menu3()"><h3>' + titles + '</h3></a>');
+				}   else if (lang == languages && contents !== '#' && group == 'submenu4' ) {
+				    dt.append('<a class="accordion-submenu submenu4" href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a>');
+				}	else if (lang == languages && contents == '#' && group == 'menu4'){
+				    dt.append('<a class="accordion-menu menu4" onclick="menu4()"><h3>' + titles + '</h3></a>');
+				}   else if (lang == languages && contents !== '#' && group == 'submenu5' ) {
+				    dt.append('<a class="accordion-submenu submenu5" href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a>');
+				}	else if (lang == languages && contents == '#' && group == 'menu5'){
+				    dt.append('<a class="accordion-menu menu5" onclick="menu5()"><h3>' + titles + '</h3></a>');
+				}   else if (lang == languages && contents !== '#' && group == 'submenu6' ) {
+				    dt.append('<a class="accordion-submenu submenu6" href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a>');
+				}	else if (lang == languages && contents == '#' && group == 'menu6'){
+				    dt.append('<a class="accordion-menu menu6" onclick="menu6()"><h3>' + titles + '</h3></a>');
+				}   else if (lang == languages && contents !== '#' && group == 'submenu7' ) {
+				    dt.append('<a class="accordion-submenu submenu7" href="//help.geo.admin.ch/?id='+ ids + '&lang='+ languages +'" target="_self">'+titles+'</a>');
+				}	else if (lang == languages && contents == '#' && group == 'menu7'){
+				    dt.append('<a class="accordion-menu menu7" onclick="menu7()"><h3>' + titles + '</h3></a>');
 				}
             });
 			$('#headingSection').append(dx1);
 			$('#headingSection').append(dx2);
 			$('#headingSection').append(dx3);
             $('#menuHelp').append(dt);
-				
+			
 
         }
 				
