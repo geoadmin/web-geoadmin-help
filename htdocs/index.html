@@ -3,23 +3,50 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
-<title>map.geo.admin - help</title>
+<title>Dev map.geo.admin - help</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="js_css/styles.css" />
+<link rel="stylesheet" type="text/css" href="js_css/owl.theme.css" />
+<link rel="stylesheet" type="text/css" href="js_css/owl.carousel.css" />
 
 </head>
-
+<script src="js_css/jquery-1.9.1.js"></script>
+<script src="js_css/owl.carousel.js"></script>
+<script src="js_css/accordion_menu.js"></script>
+<script src="js_css/script.js"></script>
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 1000,
+      paginationSpeed : 400,
+      singleItem:true
+	  
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
+</script>
 <body>
-
-<div id="page">
-
-    <div id="headingSection">
+  <div id="page">
+    <div id="headingSection"></div> 
+    <div id="owl-demo" class="owl-carousel owl-theme">
+      <div class="item"><div id="img"><img src="img_tipp/help_interface_v2.gif"></div><div id="tip-title1"><h2>Tip #1</h2></div><div id="tip-title2"><h2>Interface</h2></div><div id="description"><p><b>map.geo.admin.ch</b> is an intuitive application for the search, display and use of geographical information.<br><br>It enables the interactive presentation of maps and the inclusion of specialised (thematic) geographical data using a standard Web browser.</p></div></div>
+      <div class="item"><div id="img"><img src="img_tipp/template.gif"></div><div id="tip-title1"><h2>Tip #2</h2></div><div id="tip-title2"><h2>Template</h2></div><div id="description"><p>Description</p></div></div>
+      <div class="item"><div id="img"><img src="img_tipp/template.gif"></div><div id="tip-title1"><h2>Tip #3</h2></div><div id="tip-title2"><h2>Template</h2></div><div id="description"><p>Description</p></div></div>
     </div>
 		<div id="Sections">
 		
 			<div id="menuHelp">
-				<!-- Menu -->	
-		
+				<!-- Menu -->
 			</div>
 		
 			<div id="helpSection">
@@ -27,12 +54,10 @@
 			</div>
 			
 		</div>
+
 	<div id="footer">
-	<p>Karten der Schweiz - Cartes de la Suisse : <a href="https://map.geo.admin.ch" target="_blank">map.geo.admin.ch</a> | das Geoportal des Bundes - le géoportail fédéral : <a href="http://www.geo.admin.ch" target="_blank">www.geo.admin.ch</a> | <a href="http://www.geo.admin.ch/internet/geoportal/de/home/geoadmin/contact.html#copyright" target="_blank"> Copyright</p>
+  	  <p>Karten der Schweiz - Cartes de la Suisse : <a href="https://map.geo.admin.ch" target="_blank">map.geo.admin.ch</a> | das Geoportal des Bundes - le géoportail fédéral : <a href="http://www.geo.admin.ch" target="_blank">www.geo.admin.ch</a> | <a href="http://www.geo.admin.ch/internet/geoportal/de/home/geoadmin/contact.html#copyright" target="_blank"> Copyright</p>
 	</div>	
-</div>
-<script src="js_css/marked.min.js"></script>
-<script src="js_css/jquery-1.9.1.js"></script>
-<script src="js_css/script.js"></script>
+  </div>	
 </body>
 </html>
