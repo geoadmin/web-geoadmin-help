@@ -256,5 +256,7 @@ text-decoration:none;
 #footer a:hover {
 color:#ff0000;
 }
-
+img{
+	border: 1px solid rgb(230, 230, 230);
+}
 
