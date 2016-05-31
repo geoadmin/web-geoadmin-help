@@ -72,28 +72,28 @@ $(document).ready(function () {
 			else if (id == 54){  
 
 			if (lang == 'fr'){
-			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter_fr.html" width="570" height="1100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
+			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter_fr.html" width="570" height="1300" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
 			selectLang.append('<a href="//help.geo.admin.ch/?id='+ id + '&lang=de" target="_self">DE</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=fr" target="_self">FR</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=it" target="_self">IT</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=en" target="_self">EN</a>');
 
 			$('#helpSection').append(dl);
 			$('#headingSection').append(selectLang);
 			}
 			if (lang == 'it'){
-			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter_fr.html" width="570" height="1100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
+			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter_fr.html" width="570" height="1300" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
 			selectLang.append('<a href="//help.geo.admin.ch/?id='+ id + '&lang=de" target="_self">DE</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=fr" target="_self">FR</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=it" target="_self">IT</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=en" target="_self">EN</a>');
 
 			$('#helpSection').append(dl);
 			$('#headingSection').append(selectLang);
 			}
 			if (lang == 'de'){
-			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter.html" width="570" height="1100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
+			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter.html" width="570" height="1300" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
 			selectLang.append('<a href="//help.geo.admin.ch/?id='+ id + '&lang=de" target="_self">DE</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=fr" target="_self">FR</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=it" target="_self">IT</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=en" target="_self">EN</a>');
 
 			$('#helpSection').append(dl);
 			$('#headingSection').append(selectLang);
 			}
 			if (lang == 'en'){
-			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter_en.html" width="570" height="1100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
+			dl.append('<h2>' + title + '</h2><p>' + content + '</p>' + '<br>' + '<img src="' + image + '">' + '<br><br>' + '<legend>' + legend + '</legend>' + '<iframe src="special/parameter_en.html" width="570" height="1300" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe></dl>');
 			selectLang.append('<a href="//help.geo.admin.ch/?id='+ id + '&lang=de" target="_self">DE</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=fr" target="_self">FR</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=it" target="_self">IT</a><a>&nbsp;|&nbsp;<a/><a href="//help.geo.admin.ch/?id='+ id + '&lang=en" target="_self">EN</a>');
 
 
