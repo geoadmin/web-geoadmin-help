@@ -11,4 +11,4 @@ web-geoadmin-help
 2/ Deploying
 
  $ cd /var/www/vhosts/web-geoadmin-help/private/web-geoadmin-help
- $ sudo -u deploy -r deploy/deploy.cfg int    # or prod for production
+ $ sudo -u deploy deploy -r deploy/deploy.cfg int    # or prod for production
