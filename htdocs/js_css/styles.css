@@ -11,7 +11,7 @@ body{
 	font-size:12px !important;
 	color:#000000;
 	font-family:Arial, Helvetica, sans-serif;
-	background:url('../img/help_geoportal_bckgd.jpg') repeat;
+	background:url('../img/help_geoportal_bckgd.jpg') repeat fixed;
 }
 
 #page{
