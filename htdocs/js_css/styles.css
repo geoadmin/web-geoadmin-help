@@ -22,6 +22,7 @@ body{
 	background-repeat:no-repeat;
 	background-position:right top;
 	background-color: #FFFFFF;
+	border-radius: 25px;
 }
 
 #headingSection{
@@ -33,6 +34,7 @@ body{
 	vertical-align:middle;
 	border: 1px solid #dedede;
 	height: 88px;
+	border-radius: 25px;
 }
 
 #selectLang{
@@ -247,6 +249,7 @@ legend{
 font-size:10px;
 text-align:center;
 padding-bottom:8px;
+border-radius: 25px;
 }
 
 #footer a {
