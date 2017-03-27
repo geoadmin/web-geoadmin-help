@@ -32,7 +32,7 @@ body{
 	position:relative;
 	border-bottom:none;
 	vertical-align:middle;
-	border: 1px solid #dedede;
+	border-top: 1px solid #dedede;
 	height: 88px;
 	border-radius: 25px;
 }
