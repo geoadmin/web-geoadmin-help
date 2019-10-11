@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables";
+
+@include media-breakpoint-up(lg) {
+  body {
+    background-image: url('../img/help_geoportal_bckgd.jpg');
+    background-repeat: repeat;
+  }
+  #app {
+    max-width: 100vw !important;
+  }
+  #app.standalone {
+    margin-top: 3%;
+    padding: 30px 10px;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid $help_gray;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    #footer {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  #title {
+    display: flex;
+  }
+}

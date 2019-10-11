@@ -1,0 +1,140 @@
+@import "variables";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: $help_black;
+	background-color: $help_white;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5rem;
+	font-family: inherit;
+	font-weight: 300;
+	line-height: 1.1;
+	color: black;
+}
+
+b {
+	font-weight: bolder;
+}
+
+a {
+	color: $help_blue;
+	text-decoration: none;
+}
+a:focus, a:hover {
+	color: $help_darkblue;
+	text-decoration: none;
+}
+img, iframe {
+	max-width: 100%;
+}
+
+#header {
+	#top-menu {
+		display: flex;
+		flex-flow: row-reverse;
+		padding: 15px;
+	}
+	#lang-menu {
+		margin: auto 10px;
+		.lang-selector {
+			text-transform: uppercase;
+		}
+		.lang-selector::before {
+			content: ' | ';
+			color: $help_black;
+		}
+	}
+	#heading {
+		background: url('../img/logo.jpg') no-repeat 0px -2px;
+		margin: 20px;
+		h2 {
+			margin-left: 46px;
+		}
+	}
+	#title {
+		padding: 0 15px 20px 15px;
+		h2 {
+			margin: auto;
+		}
+	}
+}
+
+#header,
+#title {
+	position: relative;
+}
+#header::after,
+#title::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+	left: 5%;
+	border-bottom: 1px solid $help_black;
+}
+
+#app {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#app.standalone {
+	#footer {
+		font-size: 0.8rem;
+		text-align: center;
+	}
+}
+.video iframe {
+	max-width: 100%;
+}
+
+#loading, #content {
+	padding: 20px;
+}
+#content {
+	margin-top: 15px;
+}
+
+#menu-dropdown-button {
+	display: block;
+	width: 40px;
+	padding: 10px;
+	font-size: 16px;
+	color: $help_darkgray;
+	background: transparent;
+	border: 1px solid $help_darkgray;
+	border-radius: 0.25rem;
+}
+#menu-dropdown-button::before {
+	display: block;
+	content: "";
+	width: 100%;
+	padding-bottom: .125em;
+	border-top: .375em double;
+	border-bottom: .125em solid;
+}
+
+.menu-item {
+	padding: 0 15px;
+	margin-top: 20px;
+	.title {
+		font-size: 85%;
+		font-weight: normal;
+		letter-spacing: 1px;
+		color: $help_blue;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+	.menu-link a {
+		color: $help_black;
+	}
+}
+
+// import all media queries for the app
+@import "style-lg";
+@import "style-md";
