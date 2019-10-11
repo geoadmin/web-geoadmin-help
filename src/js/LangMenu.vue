@@ -1,7 +1,10 @@
 <template>
     <div id="lang-menu">
         <router-link v-bind:to="'/?ids=01&lang=' + lang">Home</router-link>
-        <router-link v-for="lang in possibleLanguages" v-bind:to="'/?ids=' + ids + '&lang=' + lang" class="lang-selector">
+        <router-link v-for="lang in possibleLanguages"
+                     v-bind:key="lang"
+                     v-bind:to="'/?ids=' + ids + '&lang=' + lang"
+                     class="lang-selector">
             {{ lang }}
         </router-link>
     </div>

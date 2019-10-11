@@ -12,9 +12,11 @@
                 </h2>
                 <menu-item  v-for="item in menuItems"
                             v-if="item"
+                            v-bind:key="item[lang].id"
                             v-bind:item="item[lang]"
                             v-bind:lang="lang"
-                            v-bind:on-menu-item-click="toggleMenu" />
+                            v-bind:currentId="currentId"
+                            v-bind:on-menu-item-click="onMenuItemClick" />
             </div>
             <div id="heading">
                 <h2>{{ headerMessage }}</h2>
@@ -54,7 +56,6 @@
         if (urlParams.embedded) {
             store.setEmbedded(urlParams.embedded);
         }
-        console.log('URL params', urlParams);
     }
 
     const loadMessages = {
@@ -99,6 +100,9 @@
             },
             menuOpened() {
                 return store.menuOpened;
+            },
+            currentId() {
+                return store.wantedIds.length === 1 ? store.wantedIds[0] : null;
             }
         },
         mounted() {
@@ -106,9 +110,13 @@
             applyUrlParamsToStore(this.$route.query);
         },
         methods: {
-          toggleMenu() {
-              store.toggleMenu();
-          }
+            toggleMenu() {
+                store.toggleMenu();
+            },
+            onMenuItemClick() {
+                this.toggleMenu();
+                window.scrollTo(0,0);
+            }
         },
         watch: {
             $route(to, _) {
