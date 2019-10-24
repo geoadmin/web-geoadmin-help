@@ -1,26 +1,21 @@
 <template>
     <div id="app" v-bind:class="{ 'standalone': !embedded }">
 
-        <div id="header">
-            <div id="top-menu">
-                <button id="menu-dropdown-button" type="button" v-on:click="toggleMenu"></button>
-                <lang-menu />
-            </div>
-            <div id="menu-dropdown-content" class="collapse" v-bind:class="{ 'show': menuOpened }">
-                <h2 id="title">
-                    <a href="https://map.geo.admin.ch" target="_self">map.geo.admin.ch</a>
-                </h2>
-                <menu-item  v-for="item in menuItems"
-                            v-if="item"
-                            v-bind:key="item[lang].id"
-                            v-bind:item="item[lang]"
-                            v-bind:lang="lang"
-                            v-bind:currentId="currentId"
-                            v-bind:on-menu-item-click="onMenuItemClick" />
-            </div>
-            <div id="heading">
-                <h2>{{ headerMessage }}</h2>
-            </div>
+        <div id="top-menu">
+            <button id="menu-dropdown-button" class="d-block d-sm-none" type="button" v-on:click="toggleMenu"></button>
+            <lang-menu />
+        </div>
+        <div id="menu" class="collapse" v-bind:class="{ 'show': menuOpened }">
+            <h2 class="title dash-after visible-xs">
+                <a href="https://map.geo.admin.ch" target="_self">map.geo.admin.ch</a>
+            </h2>
+            <menu-item  v-for="item in menuItems"
+                        v-if="item"
+                        v-bind:key="item[lang].id"
+                        v-bind:item="item[lang]"
+                        v-bind:lang="lang"
+                        v-bind:currentId="currentId"
+                        v-bind:on-menu-item-click="onMenuItemClick" />
         </div>
 
         <div v-if="loading" id="loading">
@@ -28,14 +23,24 @@
         </div>
 
         <div v-if="!loading" id="content">
+            <div id="heading" class="dash-after">
+                <h2>{{ headerMessage }}</h2>
+            </div>
             <help-item v-for="item in helpItems"
                        v-bind:key="item.id"
                        v-bind:item="item[lang]" />
         </div>
 
         <div v-if="!embedded" id="footer">
-            <hr>
-            <p>Karten der Schweiz - Cartes de la Suisse : <a href="https://map.geo.admin.ch" target="_blank">map.geo.admin.ch</a> | das Geoportal des Bundes - le géoportail fédéral : <a href="http://www.geo.admin.ch" target="_blank">www.geo.admin.ch</a> | <a href="http://www.geo.admin.ch/internet/geoportal/de/home/geoadmin/contact.html#copyright" target="_blank"> Copyright</a></p>
+            <p>
+                Karten der Schweiz - Cartes de la Suisse :
+                <a href="https://map.geo.admin.ch" target="_blank">map.geo.admin.ch</a>
+                &nbsp;|&nbsp;
+                das Geoportal des Bundes - le géoportail fédéral :
+                <a href="http://www.geo.admin.ch" target="_blank">www.geo.admin.ch</a>
+                &nbsp;|&nbsp;
+                <a href="http://www.geo.admin.ch/internet/geoportal/de/home/geoadmin/contact.html#copyright" target="_blank"> Copyright</a>
+            </p>
         </div>
     </div>
 </template>

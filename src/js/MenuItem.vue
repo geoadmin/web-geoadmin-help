@@ -1,6 +1,6 @@
 <template>
     <div class="menu-item">
-        <div class="title">
+        <div class="category">
             {{ item.title }}
         </div>
         <div v-for="child in item.children"
