@@ -30,8 +30,8 @@ window.onGapiLoad = function onGapiLoad() {
                         "majorDimension": "ROWS"
                     })
                         .then(data => {
-                            const helpItems = [];
-                            const menuItems = [];
+                            const helpItems = {};
+                            const menuItems = {};
                             let lastMenuId = null;
                             data.result.values.forEach(row => {
                                 const id = row[0],

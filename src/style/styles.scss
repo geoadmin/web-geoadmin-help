@@ -31,7 +31,9 @@ a:focus, a:hover {
 }
 img, iframe {
 	max-width: 100%;
-	width: 100%;
+	width: auto;
+	display: block;
+	margin: auto;
 }
 #top-menu {
 	display: flex;
@@ -69,8 +71,10 @@ img, iframe {
 #app {
 	display: grid;
 	grid-template-columns: 1fr;
+	padding-top: 20px;
 }
 #app.standalone {
+	padding-top: 0;
 	#footer {
 		font-size: 0.8rem;
 		text-align: center;
@@ -179,7 +183,7 @@ img, iframe {
 	.title {
 		height: 58px;
 	}
-	#app {
+	#app.standalone {
 		grid-template-columns: 1fr 3fr;
 		#top-menu, #footer {
 			grid-column-start: 1;

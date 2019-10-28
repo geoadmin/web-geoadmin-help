@@ -1,16 +1,15 @@
 <template>
     <div id="app" v-bind:class="{ 'standalone': !embedded }">
 
-        <div id="top-menu">
+        <div id="top-menu" v-if="!embedded">
             <button id="menu-dropdown-button" class="d-block d-sm-none" type="button" v-on:click="toggleMenu"></button>
             <lang-menu />
         </div>
-        <div id="menu" class="collapse" v-bind:class="{ 'show': menuOpened }">
+        <div id="menu" class="collapse" v-bind:class="{ 'show': menuOpened }" v-if="!embedded">
             <h2 class="title dash-after visible-xs">
                 <a href="https://map.geo.admin.ch" target="_self">map.geo.admin.ch</a>
             </h2>
             <menu-item  v-for="item in menuItems"
-                        v-if="item"
                         v-bind:key="item[lang].id"
                         v-bind:item="item[lang]"
                         v-bind:lang="lang"
@@ -58,9 +57,7 @@
         if (urlParams.ids) {
             store.setIds(urlParams.ids.split(','));
         }
-        if (urlParams.embedded) {
-            store.setEmbedded(urlParams.embedded);
-        }
+        store.setEmbedded(!!urlParams.embedded);
     }
 
     const loadMessages = {

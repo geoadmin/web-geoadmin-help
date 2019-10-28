@@ -3,7 +3,7 @@ import Vue from 'vue';
 const store = Vue.observable({
     ready: false,
     embedded: false,
-    menu: [],
+    menu: {},
     menuOpened: false,
     helpItems: [],
     lang: 'en',
@@ -33,7 +33,13 @@ const store = Vue.observable({
         store.embedded = embedded;
     },
     setMenu(menu) {
-        store.menu = menu;
+        // sorting menu by IDs value (don't know why they are shuffled...)
+        const orderedMenu = [];
+        Object.keys(menu).forEach(key => {
+            orderedMenu.push(menu[key]);
+        });
+        orderedMenu.sort((a,b) => a['en'].id > b['en'].id ? 1 : -1);
+        store.menu = orderedMenu;
     },
     toggleMenu() {
         store.menuOpened = !store.menuOpened;
