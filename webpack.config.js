@@ -11,7 +11,20 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: "index.html",
             template: './src/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: "special/parameter.html",
+            template: './src/special/parameter.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: "special/parameter_en.html",
+            template: './src/special/parameter_en.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: "special/parameter_fr.html",
+            template: './src/special/parameter_fr.html'
         }),
         new VueLoaderPlugin(),
         new CopyPlugin([
