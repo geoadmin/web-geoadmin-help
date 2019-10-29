@@ -36,4 +36,10 @@ And the `/dist` folder will be our webapp ready for deploy
 
 ##Deploying
 
-TODO
+After running a `npm install` run
+
+```
+npm run deploy
+```
+
+This will use your AWS `[default]` profile stored in `~/.aws/credentials` to deploy to AWS S3 (bucket `help.geo.admin.ch`), make sure that it is set prior to run this command.
