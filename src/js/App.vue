@@ -22,7 +22,7 @@
         </div>
 
         <div v-if="!loading" id="content">
-            <div id="heading" class="dash-after">
+            <div id="heading" class="dash-after" v-if="!embedded">
                 <h2>{{ headerMessage }}</h2>
             </div>
             <help-item v-for="item in helpItems"
