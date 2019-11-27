@@ -172,6 +172,14 @@ img, iframe {
 		left: -10px;
 	}
 }
+.help-item {
+	h2 {
+		font-size: 1.6rem;
+	}
+	p {
+		margin-bottom: 1rem;
+	}
+}
 
 // style for md (>768px)
 @include media-breakpoint-up(md) {
