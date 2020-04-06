@@ -54,7 +54,9 @@
         if (urlParams.lang) {
             store.setLang(urlParams.lang);
         }
-        if (urlParams.ids) {
+        if (urlParams.id) {
+            store.setIds([urlParams.id])
+        } else if (urlParams.ids) {
             store.setIds(urlParams.ids.split(','));
         }
         store.setEmbedded(!!urlParams.embedded);
