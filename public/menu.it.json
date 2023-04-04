@@ -1,0 +1,226 @@
+{
+	"10": {
+		"id": "10",
+		"title": "FINESTRA",
+		"children": [
+			{
+				"id": "11",
+				"title": "Cambiare la lingua"
+			},
+			{
+				"id": "12",
+				"title": "Indicazione delle coordinate"
+			}
+		]
+	},
+	"20": {
+		"id": "20",
+		"title": "NAVIGAZIONE & ORIENTAMENTO",
+		"children": [
+			{
+				"id": "21",
+				"title": "Cambiare la scala della carta"
+			},
+			{
+				"id": "22",
+				"title": "Zoom su una zona"
+			},
+			{
+				"id": "23",
+				"title": "Spostamento (pan)"
+			},
+			{
+				"id": "24",
+				"title": "Centrare su delle coordinate"
+			},
+			{
+				"id": "25",
+				"title": "Centrare su località, CAP, toponimo"
+			},
+			{
+				"id": "26",
+				"title": "Ritorno alla visualizzazione iniziale - reset"
+			},
+			{
+				"id": "27",
+				"title": "Geolocalizzazione"
+			},
+			{
+				"id": "28",
+				"title": "3D"
+			}
+		]
+	},
+	"30": {
+		"id": "30",
+		"title": "SELEZIONE E VISUALIZZAZIONE DEI DATI",
+		"children": [
+			{
+				"id": "31",
+				"title": "Ricerca di dati grazie al testo"
+			},
+			{
+				"id": "32",
+				"title": "Ricerca di dati nel catalogo"
+			},
+			{
+				"id": "33",
+				"title": "Cambiare lo sfondo"
+			},
+			{
+				"id": "34",
+				"title": "Cambiare la trasparenza dei dati visualizzati"
+			},
+			{
+				"id": "35",
+				"title": "Cambiare l’ordine dei livelli selezionati"
+			},
+			{
+				"id": "36",
+				"title": "Cancellare i livelli"
+			},
+			{
+				"id": "37",
+				"title": "Vedere le informazioni riguardanti un livello"
+			},
+			{
+				"id": "38",
+				"title": "Informazioni su un oggetto sulla mappa"
+			},
+			{
+				"id": "39",
+				"title": "Acquisto dati"
+			},
+			{
+				"id": "40",
+				"title": "Immagini aeree"
+			},
+			{
+				"id": "45",
+				"title": "Aviazione"
+			},
+			{
+				"id": "41",
+				"title": "Stampare"
+			},
+			{
+				"id": "42",
+				"title": "Cursore del tempo"
+			},
+			{
+				"id": "43",
+				"title": "Copia layer/confronto temporale"
+			},
+			{
+				"id": "44",
+				"title": "Selezione di oggetti « Query Tool »"
+			}
+		]
+	},
+	"50": {
+		"id": "50",
+		"title": "LINK & INTEGRAZIONE",
+		"children": [
+			{
+				"id": "52",
+				"title": "Salvare/inviare/iFrame le impostazioni di una cartina"
+			},
+			{
+				"id": "53",
+				"title": "Salvare/trasmettere un link verso un oggetto"
+			},
+			{
+				"id": "54",
+				"title": "Parametri del link verso la mappa"
+			},
+			{
+				"id": "55",
+				"title": "Mobile"
+			}
+		]
+	},
+	"59": {
+		"id": "59",
+		"title": "FUNZIONI DISEGNARE & MISURARE",
+		"children": [
+			{
+				"id": "66",
+				"title": "Tutte le funzioni \"disegnare/misurare\""
+			},
+			{
+				"id": "91",
+				"title": "Aggiungere un simbolo"
+			},
+			{
+				"id": "92",
+				"title": "Aggiungere un testo"
+			},
+			{
+				"id": "93",
+				"title": "Aggiungere un tracciato / poligono"
+			},
+			{
+				"id": "94",
+				"title": "Misurare"
+			},
+			{
+				"id": "95",
+				"title": "Condividere un disegno / KML"
+			}
+		]
+	},
+	"60": {
+		"id": "60",
+		"title": "FUNZIONI COMPLEMENTARI",
+		"children": [
+			{
+				"id": "62",
+				"title": "Importare"
+			},
+			{
+				"id": "65",
+				"title": "Confrontare"
+			},
+			{
+				"id": "68",
+				"title": "Informazione oggetto"
+			},
+			{
+				"id": "69",
+				"title": "Scorciatoia da tastiera"
+			},
+			{
+				"id": "70",
+				"title": "Segnala un problema"
+			}
+		]
+	},
+	"80": {
+		"id": "80",
+		"title": "INFORMAZIONI TECNICHE E DISPOSIZIONI LEGALI",
+		"children": [
+			{
+				"id": "81",
+				"title": "Informazioni e condizioni"
+			}
+		]
+	},
+	"02": {
+		"id": "02",
+		"title": "MANUALE",
+		"children": [
+			{
+				"id": "03",
+				"title": "I primi passi con map.geo.admin.ch"
+			},
+			{
+				"id": "04",
+				"title": "Come disegnare un percorso"
+			},
+			{
+				"id": "05",
+				"title": "Come stampare una carta con disegno"
+			}
+		]
+	}
+}

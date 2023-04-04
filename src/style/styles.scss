@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400&display=swap');
 
-@import "~bootstrap/scss/bootstrap";
-@import "variables";
+@import 'variables.scss';
+@import 'bootstrap/scss/bootstrap.scss';
 
 body {
-	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 0.9rem;
-	font-weight: 300;
-	color: $help_black;
-	background-color: $help_white;
-	margin: 0;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: $help_black;
+    background-color: $help_white;
+    margin: 0;
+    background-image: url('/img/help_geoportal_bckgd.jpg');
+    background-repeat: repeat;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0.5rem;
@@ -19,11 +21,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: black;
 }
 b {
-	font-weight: bolder;
+    font-weight: bolder;
 }
 a {
-	color: $help_blue;
-	text-decoration: none;
+    color: $help_blue;
+    text-decoration: none;
 }
 a:focus, a:hover {
 	color: $help_darkblue;
@@ -33,201 +35,4 @@ img, iframe {
 	max-width: 100%;
 	display: block;
 	margin: auto;
-}
-#top-menu {
-	display: flex;
-	flex-flow: row-reverse;
-	padding: 15px;
-}
-#lang-menu {
-	margin: auto 10px;
-	.lang-selector {
-		text-transform: uppercase;
-	}
-	.lang-selector::before {
-		content: ' | ';
-		color: $help_black;
-	}
-}
-.title {
-	padding: 0 15px 20px 15px;
-	h2 {
-		margin: auto;
-	}
-}
-.dash-after {
-	position: relative;
-	padding-bottom: 15px;
-}
-.dash-after::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	width: 90%;
-	left: 5%;
-	border-bottom: 1px solid $help_black;
-}
-#app {
-	display: grid;
-	grid-template-columns: 1fr;
-	padding-top: 20px;
-}
-#app.standalone {
-	padding-top: 0;
-	#footer {
-		font-size: 0.8rem;
-		text-align: center;
-		padding: 20px;
-		margin-top: 20px;
-		position: relative;
-	}
-	#footer::before {
-		content: '';
-		display: inline-block;
-		bottom: 0;
-		width: 90%;
-		left: 5%;
-		border-bottom: 1px solid $help_black;
-	}
-	#footer p {
-		padding-top: 20px;
-	}
-}
-.video {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-
-	iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-}
-#loading, #content {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 30px;
-}
-#content {
-	#heading {
-		background: url('../img/logo.jpg') no-repeat 0px -2px;
-		margin-bottom: 30px;
-		h2 {
-			margin-left: 46px;
-		}
-	}
-}
-#menu-dropdown-button {
-	display: block;
-	width: 40px;
-	padding: 10px;
-	font-size: 16px;
-	color: $help_darkgray;
-	background: transparent;
-	border: 1px solid $help_darkgray;
-	border-radius: 0.25rem;
-}
-#menu-dropdown-button::before {
-	display: block;
-	content: "";
-	width: 100%;
-	padding-bottom: .125em;
-	border-top: .375em double;
-	border-bottom: .125em solid;
-}
-.menu-item {
-	padding: 0 15px;
-	margin-top: 20px;
-	.category {
-		font-size: 85%;
-		font-weight: normal;
-		letter-spacing: 1px;
-		color: $help_blue;
-		text-transform: uppercase;
-		margin-bottom: 5px;
-	}
-	.category, .menu-link {
-		margin-left: 20px;
-	}
-	.menu-link {
-		a {
-			color: $help_black;
-		}
-	}
-	.menu-link.active {
-		position: relative;
-		a {
-			color: $help_red;
-		}
-	}
-	.menu-link.active::before {
-		content: url('../img/arrow.png');
-		color: $help_red;
-		position: absolute;
-		top: -1px;
-		left: -10px;
-	}
-}
-.help-item {
-	h2 {
-		font-size: 1.6rem;
-	}
-	p {
-		margin-bottom: 1rem;
-	}
-	margin-bottom: 2rem;
-}
-
-// style for md (>768px)
-@include media-breakpoint-up(md) {
-	#menu {
-		display: block;
-	}
-	#heading,
-	.title {
-		height: 58px;
-	}
-	#app.standalone {
-		grid-template-columns: 1fr 3fr;
-		#top-menu, #footer {
-			grid-column-start: 1;
-			grid-column-end: 3;
-		}
-		#menu {
-			grid-row-start: 2;
-			grid-row-end: 4;
-		}
-	}
-}
-
-// style for lg (>992px)
-@include media-breakpoint-up(lg) {
-	body {
-		background-image: url('../img/help_geoportal_bckgd.jpg');
-		background-repeat: repeat;
-	}
-	#app {
-		max-width: 100vw;
-		background-color: $help_white;
-	}
-	#app.standalone {
-		margin: 45px auto;
-		max-width: 1000px;
-		padding: 30px 10px;
-		grid-template-columns: 1fr 2fr;
-		border: 1px solid $help_gray;
-		box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
-		border-radius: 25px;
-		#footer {
-			grid-column-start: 1;
-			grid-column-end: 3;
-		}
-	}
-	#title {
-		display: flex;
-	}
 }

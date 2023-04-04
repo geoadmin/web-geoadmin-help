@@ -1,0 +1,226 @@
+{
+	"10": {
+		"id": "10",
+		"title": "FENÊTRE",
+		"children": [
+			{
+				"id": "11",
+				"title": "Changer de langue"
+			},
+			{
+				"id": "12",
+				"title": "Indication des coordonnées"
+			}
+		]
+	},
+	"20": {
+		"id": "20",
+		"title": "NAVIGATION & ORIENTATION",
+		"children": [
+			{
+				"id": "21",
+				"title": "Changer l'échelle de la carte"
+			},
+			{
+				"id": "22",
+				"title": "Zoom sur une zone"
+			},
+			{
+				"id": "23",
+				"title": "Déplacer (pan)"
+			},
+			{
+				"id": "24",
+				"title": "Recentrer sur des coordonnées"
+			},
+			{
+				"id": "25",
+				"title": "Recentrer selon localité, npa, lieu-dit "
+			},
+			{
+				"id": "26",
+				"title": "Retour au cadrage Initial - reset"
+			},
+			{
+				"id": "27",
+				"title": "Géolocalisation"
+			},
+			{
+				"id": "28",
+				"title": "3D"
+			}
+		]
+	},
+	"30": {
+		"id": "30",
+		"title": "SELECTION & VISUALISATION DE DONNÉES",
+		"children": [
+			{
+				"id": "31",
+				"title": "Recherche de données (plein texte)"
+			},
+			{
+				"id": "32",
+				"title": "Recherche de données (catalogue)"
+			},
+			{
+				"id": "33",
+				"title": "Changer l'arrière-plan"
+			},
+			{
+				"id": "34",
+				"title": "Transparence des jeux de données"
+			},
+			{
+				"id": "35",
+				"title": "Changer l'ordre des jeux de données"
+			},
+			{
+				"id": "36",
+				"title": "Supprimer les jeux de données"
+			},
+			{
+				"id": "37",
+				"title": "Voir les informations d'un jeu de données"
+			},
+			{
+				"id": "38",
+				"title": "Informations d'un objet sur la carte"
+			},
+			{
+				"id": "39",
+				"title": "Acquisition de données"
+			},
+			{
+				"id": "40",
+				"title": "Images aériennes"
+			},
+			{
+				"id": "45",
+				"title": "Aviation"
+			},
+			{
+				"id": "41",
+				"title": "Imprimer"
+			},
+			{
+				"id": "42",
+				"title": "Curseur de temps"
+			},
+			{
+				"id": "43",
+				"title": "Copier/comparer données temporelles"
+			},
+			{
+				"id": "44",
+				"title": "Sélection d'objets"
+			}
+		]
+	},
+	"50": {
+		"id": "50",
+		"title": "LIEN & INTEGRATION",
+		"children": [
+			{
+				"id": "52",
+				"title": "Enregistrer/ transmettre / iFrame le contexte de la carte"
+			},
+			{
+				"id": "53",
+				"title": "Enregistrer/transmettre un lien vers un objet"
+			},
+			{
+				"id": "54",
+				"title": "Paramétrer le lien vers la carte"
+			},
+			{
+				"id": "55",
+				"title": "Mobile"
+			}
+		]
+	},
+	"59": {
+		"id": "59",
+		"title": "FONCTIONS MESURER & DESSINER",
+		"children": [
+			{
+				"id": "66",
+				"title": "Toutes les fonctions \"dessiner/mesurer\""
+			},
+			{
+				"id": "91",
+				"title": "Ajouter un symbole"
+			},
+			{
+				"id": "92",
+				"title": "Ajouter du texte"
+			},
+			{
+				"id": "93",
+				"title": "Ajouter un tracé / polygone"
+			},
+			{
+				"id": "94",
+				"title": "Mesurer"
+			},
+			{
+				"id": "95",
+				"title": "Partager un dessin / KML"
+			}
+		]
+	},
+	"60": {
+		"id": "60",
+		"title": "FONCTIONS COMPLEMENTAIRES",
+		"children": [
+			{
+				"id": "62",
+				"title": "Importer"
+			},
+			{
+				"id": "65",
+				"title": "Comparer"
+			},
+			{
+				"id": "68",
+				"title": "Information objet"
+			},
+			{
+				"id": "69",
+				"title": "Raccourcis clavier"
+			},
+			{
+				"id": "70",
+				"title": "Annoncer un problème"
+			}
+		]
+	},
+	"80": {
+		"id": "80",
+		"title": "INFOS TECHNIQUES ET LÉGALES",
+		"children": [
+			{
+				"id": "81",
+				"title": "Informations & conditions"
+			}
+		]
+	},
+	"02": {
+		"id": "02",
+		"title": "TUTORIELS",
+		"children": [
+			{
+				"id": "03",
+				"title": "Premiers pas avec map.geo.admin.ch"
+			},
+			{
+				"id": "04",
+				"title": "Comment tracer un parcours"
+			},
+			{
+				"id": "05",
+				"title": "Comment imprimer une carte avec dessin"
+			}
+		]
+	}
+}
