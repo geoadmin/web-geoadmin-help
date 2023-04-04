@@ -1,0 +1,226 @@
+{
+	"10": {
+		"id": "10",
+		"title": "AUFBAU KARTENFENSTER",
+		"children": [
+			{
+				"id": "11",
+				"title": "Wechsel der Sprache der Anwendung"
+			},
+			{
+				"id": "12",
+				"title": "Koordinatenanzeige"
+			}
+		]
+	},
+	"20": {
+		"id": "20",
+		"title": "NAVIGATION & ORIENTIERUNG",
+		"children": [
+			{
+				"id": "21",
+				"title": "Ändern des Kartenmassstabs"
+			},
+			{
+				"id": "22",
+				"title": "Zoom auf Ausschnitt"
+			},
+			{
+				"id": "23",
+				"title": "Verschiebewerkzeug (Panning)"
+			},
+			{
+				"id": "24",
+				"title": "Zentrieren auf Koordinaten"
+			},
+			{
+				"id": "25",
+				"title": "Suchen eines Orts, PLZ oder Flurnamen"
+			},
+			{
+				"id": "26",
+				"title": "Zurück in die Startansicht - Reset"
+			},
+			{
+				"id": "27",
+				"title": "Geolokalisierung"
+			},
+			{
+				"id": "28",
+				"title": "3D"
+			}
+		]
+	},
+	"30": {
+		"id": "30",
+		"title": "AUSWAHL & ANZEIGE VON DATEN",
+		"children": [
+			{
+				"id": "31",
+				"title": "Suche nach Daten (Volltextsuche)"
+			},
+			{
+				"id": "32",
+				"title": "Suche nach Daten (Verzeichnisstruktur)"
+			},
+			{
+				"id": "33",
+				"title": "Ändern des Kartenhintergrundes"
+			},
+			{
+				"id": "34",
+				"title": "Ändern der Transparenz der Datensätze"
+			},
+			{
+				"id": "35",
+				"title": "Ändern der Reihenfolge der Datensätze"
+			},
+			{
+				"id": "36",
+				"title": "Entfernen der Datensätze"
+			},
+			{
+				"id": "37",
+				"title": "Anzeigen von Zusatzinformationen"
+			},
+			{
+				"id": "38",
+				"title": "Detailinformationen eines Kartenelements"
+			},
+			{
+				"id": "39",
+				"title": "Datenbezug"
+			},
+			{
+				"id": "40",
+				"title": "Luftbilder"
+			},
+			{
+				"id": "45",
+				"title": "Luftfahrt"
+			},
+			{
+				"id": "41",
+				"title": "Drucken"
+			},
+			{
+				"id": "42",
+				"title": "Zeitregler"
+			},
+			{
+				"id": "43",
+				"title": "Zeit kopieren/vergleichen"
+			},
+			{
+				"id": "44",
+				"title": "Objekte selektieren"
+			}
+		]
+	},
+	"50": {
+		"id": "50",
+		"title": "VERLINKUNG & EINBINDEN",
+		"children": [
+			{
+				"id": "52",
+				"title": "Kartendarstellung abspeichern/versenden/iFrame"
+			},
+			{
+				"id": "53",
+				"title": "Kartenelement abspeichern/weiterversenden"
+			},
+			{
+				"id": "54",
+				"title": "Parametrisierter Aufruf der Karte"
+			},
+			{
+				"id": "55",
+				"title": "Mobile"
+			}
+		]
+	},
+	"59": {
+		"id": "59",
+		"title": "ZEICHNEN & MESSEN FUNKTIONEN",
+		"children": [
+			{
+				"id": "66",
+				"title": "Alle \"Zeichnen/Messen\" Funktionen"
+			},
+			{
+				"id": "91",
+				"title": "Hinzufügen eines  Symbols"
+			},
+			{
+				"id": "92",
+				"title": "Hinzufügen von Text"
+			},
+			{
+				"id": "93",
+				"title": "Hinzufügen einer Linie / eines Polygons"
+			},
+			{
+				"id": "94",
+				"title": "Messen"
+			},
+			{
+				"id": "95",
+				"title": "Teilen einer Zeichnung / KML"
+			}
+		]
+	},
+	"60": {
+		"id": "60",
+		"title": "ZUSATZFUNKTIONEN",
+		"children": [
+			{
+				"id": "62",
+				"title": "Importieren"
+			},
+			{
+				"id": "65",
+				"title": "Vergleichen"
+			},
+			{
+				"id": "68",
+				"title": "Objekt-Information"
+			},
+			{
+				"id": "69",
+				"title": "Tastaturabkürzungen"
+			},
+			{
+				"id": "70",
+				"title": "Problem melden"
+			}
+		]
+	},
+	"80": {
+		"id": "80",
+		"title": "TECHNISCHE UND RECHTLICHE INFORMATIONEN",
+		"children": [
+			{
+				"id": "81",
+				"title": "Informationen & Bedingungen"
+			}
+		]
+	},
+	"02": {
+		"id": "02",
+		"title": "ANLEITUNGEN",
+		"children": [
+			{
+				"id": "03",
+				"title": "Erste Schritte mit map.geo.admin.ch"
+			},
+			{
+				"id": "04",
+				"title": "Wie zeichne ich eine Route?"
+			},
+			{
+				"id": "05",
+				"title": "Wie drucke ich eine Karte mit Zeichnung"
+			}
+		]
+	}
+}

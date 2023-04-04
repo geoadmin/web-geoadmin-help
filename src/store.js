@@ -1,49 +1,54 @@
-import Vue from 'vue';
+import { reactive } from 'vue'
 
-const store = Vue.observable({
+const store = reactive({
     ready: false,
     embedded: false,
     menu: {},
     menuOpened: false,
     helpItems: [],
     lang: 'en',
+    possibleLanguages: ['en', 'de', 'fr', 'it'],
     helpItemsMatchingWantedIds: [],
     wantedIds: ['01'],
-    setHelpItems: (data) => {
-        store.helpItems = data;
-        store.filterHelpItemsWithWantedIds();
-        store.ready = true;
+    setHelpItems(data) {
+        this.helpItems = data
+        this.filterHelpItemsWithWantedIds()
+        this.ready = true
     },
-    setIds: (ids) => {
-        store.wantedIds = [...ids];
-        store.filterHelpItemsWithWantedIds();
+    setIds(ids) {
+        this.wantedIds = [...ids]
+        this.filterHelpItemsWithWantedIds()
     },
-    setLang: (lang) => {
-        store.lang = lang;
+    async setLang(lang) {
+        if (this.possibleLanguages.includes(lang)) {
+            this.lang = lang
+        } else {
+            console.debug('unrecognized lang, will not load')
+        }
     },
-    filterHelpItemsWithWantedIds: () => {
-        store.helpItemsMatchingWantedIds = [];
-        store.wantedIds.forEach(oneId => {
-            if (store.helpItems[oneId]) {
-                store.helpItemsMatchingWantedIds.push(store.helpItems[oneId]);
+    filterHelpItemsWithWantedIds() {
+        this.helpItemsMatchingWantedIds = []
+        this.wantedIds.forEach((oneId) => {
+            if (this.helpItems[oneId]) {
+                this.helpItemsMatchingWantedIds.push(this.helpItems[oneId])
             }
-        });
+        })
     },
     setEmbedded(embedded) {
-        store.embedded = embedded;
+        this.embedded = embedded
     },
     setMenu(menu) {
         // sorting menu by IDs value (don't know why they are shuffled...)
-        const orderedMenu = [];
-        Object.keys(menu).forEach(key => {
-            orderedMenu.push(menu[key]);
-        });
-        orderedMenu.sort((a,b) => a['en'].id > b['en'].id ? 1 : -1);
-        store.menu = orderedMenu;
+        const orderedMenu = []
+        Object.keys(menu).forEach((key) => {
+            orderedMenu.push(menu[key])
+        })
+        orderedMenu.sort((a, b) => (a.id > b.id ? 1 : -1))
+        this.menu = orderedMenu
     },
     toggleMenu() {
-        store.menuOpened = !store.menuOpened;
-    }
-});
+        this.menuOpened = !this.menuOpened
+    },
+})
 
-export default store;
+export default store

@@ -1,0 +1,226 @@
+{
+	"10": {
+		"id": "10",
+		"title": "MAP WINDOW",
+		"children": [
+			{
+				"id": "11",
+				"title": "Change language"
+			},
+			{
+				"id": "12",
+				"title": "Display coordinates"
+			}
+		]
+	},
+	"20": {
+		"id": "20",
+		"title": "NAVIGATION & ORIENTATION",
+		"children": [
+			{
+				"id": "21",
+				"title": "Zoom in and zoom out (change the map scale)"
+			},
+			{
+				"id": "22",
+				"title": "Zoom in to a section of the map"
+			},
+			{
+				"id": "23",
+				"title": "Panning tool"
+			},
+			{
+				"id": "24",
+				"title": "Geographical search (centre on coordinates)"
+			},
+			{
+				"id": "25",
+				"title": "Geographical search (place name or postcode)"
+			},
+			{
+				"id": "26",
+				"title": "Back to start - reset"
+			},
+			{
+				"id": "27",
+				"title": "Geolocation"
+			},
+			{
+				"id": "28",
+				"title": "3D"
+			}
+		]
+	},
+	"30": {
+		"id": "30",
+		"title": "SELECTION AND DISPLAY OF DATA",
+		"children": [
+			{
+				"id": "31",
+				"title": "Full text search for data"
+			},
+			{
+				"id": "32",
+				"title": "Search for data (catalogue)"
+			},
+			{
+				"id": "33",
+				"title": "Change the cartographic background"
+			},
+			{
+				"id": "34",
+				"title": "Change the visibility of the selected dataset"
+			},
+			{
+				"id": "35",
+				"title": "Change the order of the selected datasets"
+			},
+			{
+				"id": "36",
+				"title": "Remove selected datasets"
+			},
+			{
+				"id": "37",
+				"title": "View additional information about a data-set"
+			},
+			{
+				"id": "38",
+				"title": "View information about an object on the map"
+			},
+			{
+				"id": "39",
+				"title": "Buy data"
+			},
+			{
+				"id": "40",
+				"title": "Aerial photography"
+			},
+			{
+				"id": "45",
+				"title": "Aviation"
+			},
+			{
+				"id": "41",
+				"title": "Print"
+			},
+			{
+				"id": "42",
+				"title": "Time slider"
+			},
+			{
+				"id": "43",
+				"title": "Time copy/compare"
+			},
+			{
+				"id": "44",
+				"title": "How to select objects « Query Tool »"
+			}
+		]
+	},
+	"50": {
+		"id": "50",
+		"title": "LINKING & INTEGRATION",
+		"children": [
+			{
+				"id": "52",
+				"title": "Send/save/iFrame of the current map"
+			},
+			{
+				"id": "53",
+				"title": "Save/send a link to an object"
+			},
+			{
+				"id": "54",
+				"title": "Use parameters to call up a map"
+			},
+			{
+				"id": "55",
+				"title": "Mobile"
+			}
+		]
+	},
+	"59": {
+		"id": "59",
+		"title": "DRAW & MEASURE FUNCTIONS",
+		"children": [
+			{
+				"id": "66",
+				"title": "All \"draw/measure\" functions"
+			},
+			{
+				"id": "91",
+				"title": "Add symbol"
+			},
+			{
+				"id": "92",
+				"title": "Add text"
+			},
+			{
+				"id": "93",
+				"title": "Add line / polygon"
+			},
+			{
+				"id": "94",
+				"title": "Measure"
+			},
+			{
+				"id": "95",
+				"title": "Share drawing / KML"
+			}
+		]
+	},
+	"60": {
+		"id": "60",
+		"title": "ADVANCED FUNCTIONS",
+		"children": [
+			{
+				"id": "62",
+				"title": "Import"
+			},
+			{
+				"id": "65",
+				"title": "Compare"
+			},
+			{
+				"id": "68",
+				"title": "Object information"
+			},
+			{
+				"id": "69",
+				"title": "Keyboard shortcuts"
+			},
+			{
+				"id": "70",
+				"title": "Report problem"
+			}
+		]
+	},
+	"80": {
+		"id": "80",
+		"title": "TECHNICAL AND LEGAL INFORMATION",
+		"children": [
+			{
+				"id": "81",
+				"title": "Informations and conditions"
+			}
+		]
+	},
+	"02": {
+		"id": "02",
+		"title": "TUTORIALS",
+		"children": [
+			{
+				"id": "03",
+				"title": "First steps with map.geo.admin.ch"
+			},
+			{
+				"id": "04",
+				"title": "How to trace a hiking route"
+			},
+			{
+				"id": "05",
+				"title": "How to print a map with drawing"
+			}
+		]
+	}
+}
